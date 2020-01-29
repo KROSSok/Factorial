@@ -4,11 +4,11 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 
 public class Config {
-    public static String value = "recursive";
+    public static String Value = "recursive";
     String getFactorialMethod(String file, String key) {
         String method = "";
         RecFactorial rFac = new RecFactorial();
-        Factorial fac = new Factorial();
+        Factorial fac = new LoopFactorial();
         int result = 0;
         JSONParser jsonParser = new JSONParser();
         try {

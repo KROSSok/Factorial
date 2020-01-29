@@ -12,7 +12,7 @@ public class UnitTest {
 
     @Test
     public void testFactorial() throws Exception{
-        Factorial factorial = new Factorial();
+        Factorial factorial = new LoopFactorial();
         assertEquals(120, factorial.factorial(5));
         assertEquals(3628800, factorial.factorial(10));
         assertEquals(1, factorial.factorial(1));

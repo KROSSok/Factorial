@@ -10,13 +10,13 @@ public class Main {
         Scanner in = new Scanner(System.in);
         out.println("Input number: ");
         int number = in.nextInt();
-        RecFactorial rFac = new RecFactorial();
-        Factorial fac = new Factorial();
         Config config = new Config();
         value = config.getFactorialMethod("config.json", "method");
-        if (value == config.value){
+        if (value == Config.Value){
+            Factorial rFac = new RecFactorial();
             out.println(rFac.factorial(number));
         } else{
+            Factorial fac = new LoopFactorial();
             out.println(fac.factorial(number));
         }
         out.println(value);
