@@ -6,11 +6,9 @@ import Factorial.*;
 
 public class Config {
     public static String Value = "recursive";
+
     String getFactorialMethod(String key) {
         String method = "";
-        RecFactorial rFac = new RecFactorial();
-        Factorial fac = new LoopFactorial();
-        int result = 0;
         JSONParser jsonParser = new JSONParser();
         try {
             Object object = jsonParser.parse(new FileReader("config.json"));
@@ -19,7 +17,9 @@ public class Config {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        Main.value = Value;
+        if (Value.equals(method)){
+            Main.value = Value;
+        }
         return method;
     }
 }
