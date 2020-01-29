@@ -18,13 +18,11 @@ public class Main {
             Factorial fac = new LoopFactorial();
             out.println("fac " + fac.factorial(number));
         }
-        out.println(value);
-        out.println(Config.Value);
     }
 }
 
 /*
-почитай як реквести  в джаві робляться
+почитай як реквести в джаві робляться
 типу GET
 потім Наз тобі кине урлу
 https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=StatTrak%E2%84%A2%20M4A1-S%20|%20Hyper%20Beast%20(Minimal%20Wear)

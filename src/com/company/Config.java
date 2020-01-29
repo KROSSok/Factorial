@@ -2,7 +2,6 @@ package com.company;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
-import Factorial.*;
 
 public class Config {
     public static String Value = "recursive";
