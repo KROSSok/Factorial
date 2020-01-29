@@ -1,10 +1,10 @@
 package com.company;
 
-public interface Factorials {
+public interface Factorial {
     int factorial(int number) throws Exception;
 }
 
-class Factorial implements Factorials{
+class LoopFactorial implements Factorial{
     public int factorial(int number) throws Exception{
         int result = 1;
         if(number < 0){
@@ -16,7 +16,7 @@ class Factorial implements Factorials{
     }
 }
 
-class RecFactorial implements Factorials{
+class RecFactorial implements Factorial{
     public int factorial(int number) throws Exception{
         int result = 1;
         if(number < 0){
