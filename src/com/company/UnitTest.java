@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
-
+import Factorial.*;
 
 public class UnitTest {
 

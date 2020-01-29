@@ -1,7 +1,6 @@
 package com.company;
-
+import Factorial.*;
 import java.util.Scanner;
-
 import static java.lang.System.*;
 
 public class Main {
